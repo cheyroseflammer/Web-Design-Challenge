@@ -1,53 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Assets/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-    <title>Viz Dashboard</title>
-</head>
-<body>
-    <!-- NavBar -->
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="index">
-                <a href="index.html">Latitude</a>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="flex-wrap">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand px-5" href="index.html">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav px-5">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+                      <a class="dropdown-item" href="humidity.html">Humidity</a>
+                      <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                      <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link px-3" href="comparisons.html">Comparisons</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-3" href="data.html">Data</a>
+                </li>
+              </ul>
             </div>
-            <div class="menu-btn" id="hamburger">
-                <i class="fas fa-bars"></i>
+        </nav>
+        <!-- PAGE -->
+        <footer class="bg-dark text-center text-lg-start fixed-bottom">
+            <!-- Copyright -->
+            <div class="text-center p-3 text-light">
+              © 2021 Copyright:
+              <a class="text-light" href="#">Chey Rose Flammer</a>
             </div>
-            <ul class="menu" id='nav-ul'>
-                <select id="select" onchange="if (this.value) window.location.href=this.value">
-                    <option value="">Plots</option>
-                    <option value="maxtemp.html">Max Temp</option>
-                    <option value="humidity.html">Humidity</option>
-                    <option value="cloudiness.html">Cloudiness</option>
-                    <option value="windspeed.html">Wind Speed</option>
-                </select> 
-                <li><a href="comparisons.html">Comparisons</a></li>
-                <li><a href="data.html">Data</a></li>
-            </ul> 
-        </div>
-    </nav>
-  <!-- Comparisons Page -->
-  <section class="const" id="const">
-    <div class="max-width">
-        <div class="comparisons-content">
-            <header>Comparisons</header>
-            I'm baby la croix succulents gluten-free, vaporware pok pok banh mi lumbersexual fanny pack butcher ugh kogi photo booth deep v. Vegan enamel pin cornhole twee. Slow-carb butcher plaid, DIY knausgaard man braid fingerstache jianbing. Farm-to-table actually messenger bag artisan bushwick skateboard mustache whatever knausgaard meditation semiotics succulents master cleanse prism. Marfa hexagon vegan, kale chips heirloom tilde plaid woke beard kinfolk 8-bit. Deep v live-edge food truck activated charcoal, direct trade palo santo portland. Umami tbh pork belly aesthetic, artisan mustache cornhole thundercats kogi actually jean shorts flannel.
-
-            Coloring book put a bird on it brooklyn yuccie unicorn. Farm-to-table edison bulb pug brunch retro pok pok. Chartreuse marfa swag trust fund tilde. Edison bulb blog coloring book try-hard flexitarian lyft. Photo booth fam wolf vaporware, sriracha portland four loko +1 woke succulents vape cold-pressed selvage brunch. Try-hard authentic craft beer mustache lomo.
-        </div>
+            <!-- Copyright -->
+        </footer>
     </div>
-</section>
-<!-- FOOTER SECTION START -->
-  <footer>
-    <span>Created By <a href="#">Chey Rose</a> | <span
-        class="far fa-copyright"></span> 2021 All rights
-      reserved.</span>
-  </footer>
-</body>
-<script src="/Script/script.js"></script>
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="/Script/script.js"></script>
+  </body>
 </html>

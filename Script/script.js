@@ -1,16 +1,5 @@
-/* eslint-disable */
+$('.dropdown').click(function(){
 
-const hamburger = document.getElementById('hamburger');
+  $('.dropdown-menu').toggleClass('show');
 
-const navUL = document.getElementById('nav-ul');
-
-// Start
-
-hamburger.addEventListener('click', () => {
-  navUL.classList.toggle('active');
-  if (this.scrollY > 20) {
-    $(".navbar").addClass("sticky");
-  } else {
-    $(".navbar").removeClass("sticky");
-  }
-})
+});
