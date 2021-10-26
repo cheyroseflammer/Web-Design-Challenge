@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 /* ALL */
 * {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
   font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
 }
 
+body {
+  background-color: black;
+  color: white;
+}
 
 /* SCROLL BAR*/
 ::-webkit-scrollbar {
@@ -27,23 +29,69 @@
   scroll-behavior: smooth;
 }
 
-/* NAVBAR */
+/* LANDING PAGE */
+.img-container {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
 
 
-/* DROPDOWN */
+.dropdown-menu {
+  color: white;
+  background-color: black;
+}
+
+.dropdown-item {
+  color: white;
+}
 
 
-/* HAMBURGER  */
+.dropdown-item:active {
+  background-color: yellow;
+  color: black;
+}
 
 
-/* FOOTER STYLING  */
+
+.title {
+  padding-top: 20px;
+}
+
+img {
+  padding-right: 10px;
+}
+
+.second {
+  margin-top: -15px;
+  padding-top: 0;
+}
+
+.row {
+  padding-top: 1rem;
+}
+
+.box {
+  padding: 1rem;
+  background-color: #101010;
+}
+
+.comp {
+  padding-left: 5rem;
+}
 
 
-/* HEADER */
+.title {
+  text-align: center;
+  padding-bottom: 1rem;
+}
 
-
-/* CARD */
-
+.text {
+  text-align: center;
+  padding-top: 1rem;
+  font-weight: 600;
+  font-size: 20px;
+}
 
 /* MEDIA QUERIES */
 @media (max-width: 1300px) {
@@ -56,4 +104,12 @@
     padding: 0 50px;
   }
 }
+
+td, th {
+  text-align: center;
+  padding: 10px;
+  border: #707070 solid 2px;
+  padding-left: 1rem;
+}
+
   
