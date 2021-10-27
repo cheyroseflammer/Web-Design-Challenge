@@ -93,23 +93,16 @@ img {
   font-size: 20px;
 }
 
-/* MEDIA QUERIES */
-@media (max-width: 1300px) {
-  .const .max-width {
-    margin-left: 0px;
-  }
-} 
-@media (max-width: 991px) {
-  .max-width {
-    padding: 0 50px;
-  }
-}
-
 td, th {
   text-align: center;
   padding: 10px;
   border: #707070 solid 2px;
   padding-left: 1rem;
 }
+
+
+
+
+
 
   
